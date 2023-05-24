@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://programming-group.com/sitemap.xml
