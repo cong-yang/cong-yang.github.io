@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://vcc.siat.ac.cn/research/2016/Tree/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN" xml:lang="zh-CN">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="images/latexit.js"></script>
+
+<link href="images/favicon.ico" rel="shortcut icon"><title>Cong Yang</title>
+<link rel="stylesheet" type="text/css" href="images/project_style.css">
+</head>
+
+<body>
+<div class="page">
+	<div class="top">
+    	<div class="top-con">
+            <div style="float:left;width:426px;height:60px; margin-top:13px;"></div>
+        </div>
+    </div>
+    <div style="width:950px;margin:0 auto;">
+    	<div class="main">
+        	<div class="title">
+            	<div class="h1">
+					Object Matching with Hierarchical Skeletons
+				</div>
+                <p style="text-align:center;">
+					<strong style="font-size:14px;line-height:1.5;">Pattern Recognition</strong>
+				</p>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;">
+						Cong Yang, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						Oliver Tiebe, &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+						Kimiaki Shirahama, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						Marcin Grzegorzek
+					</span> 
+				</p>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><a href="http://www.pr.informatik.uni-siegen.de/" target="_blank" style="text-decoration:none;cursor:pointer;outline-style:none;font-family:Arial, Helvetica, sans-serif;line-height:normal;text-align:center;white-space:normal;background-color:#FFFFFF;">Research Group for Pattern Recognition, University of Siegen</a>
+				</p>
+				<br><br>
+				<p style="text-align:center;">
+					<img src="images/skeletonchallenge.png" alt="" style="line-height:1.5;"> 
+				</p>
+				<p style="text-align:justify;">
+					<strong style="line-height:1.5;text-align:left;">Figure1：</strong><span style="line-height:1.5;text-align:left;">Challenge of the traditional skeleton-based object matching methods. DCE requires a proper stop parameter <span lang="latex">k</span> to calibrate the pruning power. However, different stop parameters for the same object (the first row) or the same parameter for different objects (the second row) lead to visually different skeletons in which some important parts are missing (legs in (a), (b), (e), (f)). Furthermore, even if we find the best stop parameter, skeletons of the same object sometimes differ if the scale is changed ((g) and (h)). This is because the vanishing of shape parts is unavoidable when the resolution decreases. Therefore, fixing <span lang="latex">k</span> for skeleton pruning is not a proper solution for all objects.</span> 
+				</p>
+
+				<br><br>
+
+				<p style="text-align:left;">
+					<span style="line-height:1.5;"><strong style="font-family:Arial, Helvetica, sans-serif;line-height:normal;white-space:normal;background-color:#FFFFFF;"><span style="color:#337FE5;font-size:16px;">Abstract</span></strong><br></span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;">The skeleton of an object provides an intuitive and effective abstraction which facilitates object matching and recognition. However, without any human interaction, traditional skeleton-based descriptors and matching algorithms are not stable for deformable objects. Specifically, some fine-grained topological and geometrical features would be discarded if the skeleton was incomplete or only represented significant visual parts of an object. Moreover, the performance of skeleton-based matching highly depends on the quality and completeness of skeletons. In this paper, we propose a novel object representation and matching algorithm based on hierarchical skeletons which capture the shape topology and geometry through multiple levels of skeletons. For object representation, we reuse the pruned skeleton branches to represent the coarse- and fine-grained shape topological and geometrical features. Moreover, this can improve the stability of skeleton pruning without human interaction. We also propose an object matching method which considers both global shape properties and fine-grained deformations by defining singleton and pairwise potentials for similarity computation between hierarchical skeletons. Our experiments attest our hierarchical skeleton-based method a significantly better performance than most existing shape-based object matching methods on six datasets, achieving a 99.21% bulls-eye score on the MPEG7 shape dataset.</span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;"><br></span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;"><strong style="color:#337FE5;font-family:Arial, Helvetica, sans-serif;font-size:18px;line-height:normal;white-space:normal;background-color:#FFFFFF;">Overview</strong><br></span> 
+				</p>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><img src="images/hskeleton1.png" alt=""><br></span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;"><strong>Figure 2</strong>: Illustration of original shape <span lang="latex">D</span>, initial skeleton <span lang="latex">S^{n}(D)</span>, simplified polygon <span lang="latex">P^{k}</span> and the pruned skeleton <span lang="latex">S^{n-k+1}(D)</span> generated by DCE with <span lang="latex">k = 10</span>.</span> 
+				</p>
+				<br><br>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><img src="images/hskeleton2.png" alt=""><br></span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;"><strong>Figure 3</strong>: Illustration of the matching algorithm for hierarchical skeletons. All skeletons in <span lang="latex">S_{1}</span>and <span lang="latex">S_{2}</span> are ordered from coarse level (<span lang="latex">T_{min}</span>) to fine level (<span lang="latex">T_{max}</span>).</span> 
+				</p>
+				<br><br>
+				<p style="text-align:left;">
+					<strong style="color:#337FE5;font-family:Arial, Helvetica, sans-serif;font-size:18px;line-height:normal;background-color:#FFFFFF;">Results</strong> 
+				</p>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><img src="images/hskeletonresult1.png" alt=""><br></span> 
+				</p>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;"><strong>Figure 4</strong>: Score comparison between different matching methods: the proposed method (red), the singleton potential (blue), the global optimum matching method (green) and the PS method (black). Horizontal axis represents the hierarchical skeleton levels and vertical axis represents the retrieval score.</span> 
+				</p>
+				<br><br>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><strong>Table 1</strong>: Bulls-eye score on the MPEG7 Dataset. HS denotes the hierarchical skeleton method.</span> 
+				</p>
+				<p style="text-align:center;">
+					<span style="line-height:1.5;"><img src="images/hskeletonresult2.png" alt=""><br></span> 
+				</p>
+				<br><br>
+				<p style="text-align:left;">
+					<span style="line-height:1.5;"><strong style="color:#337FE5;font-family:Arial, Helvetica, sans-serif;font-size:18px;line-height:normal;white-space:normal;background-color:#FFFFFF;"><strong><span style="font-size:16px;">Acknowledgments</span></strong></strong><br></span> 
+				</p>
+				<p style="text-align:left;">
+					<span style="line-height:1.5;">Research activities leading to this work have been supported by the China Scholarship Council (CSC) and the German Research Foundation (DFG) within the Research Training Group 1564 (GRK 1564).</span> 
+				</p>
+				<br>
+				<strong style="color:#337FE5;font-family:Arial, Helvetica, sans-serif;font-size:18px;line-height:normal;white-space:normal;background-color:#FFFFFF;"><span style="font-size:16px;">BiBTex</span></strong><br>
+				<p style="text-align:justify;">
+					<span style="line-height:1.5;">@article {Yang2016OMW,<br/></span>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; title = {Object Matching with Hierarchical Skeletons},</span><br/>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; author = {Cong Yang and Oliver Tiebe and Kimiaki Shirahama and Marcin Grzegorzek},</span><br/>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; journal = {Pattern Recognition},</span><br/>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; volume = {55},</span><br/>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; pages = {183-197},</span><br/>
+					<span style="line-height:1.5;">&nbsp; &nbsp; &nbsp; year = {2016},</span><br/>
+					<span style="line-height:1.5;">}</span>
+				</p>
+			</div>
+            <div class="title" style="border:0;">
+				<div class="til">Downloads</div>
+				<br><br><br>
+	               <div>
+	                	Dataset: 
+						[<a href="../dataset/mpeg400.zip" target="_blank">MPEG400</a>]&nbsp; &nbsp; &nbsp;[<a href="../dataset/Tetrapod120.zip" target="_blank">Tetrapod120</a>]<br><br>
+                        Source Code: 
+						[<a href="../codes/SkeletonPruning.zip" target="_blank">Skeleton Pruning</a>] &nbsp; &nbsp; &nbsp;
+						[<a href="../codes/SkeletonGraph.zip" target="_blank">Skeleton Graph</a>] &nbsp; &nbsp; &nbsp;
+						[<a href="../codes/SkeletonMatching-matlab.zip" target="_blank">Skeleton Matching</a>] <br><br>
+						Paper: <a href="../pdf/Cong-PR-Skeleton-2016.pdf" target="_blank">PDF</a>
+                    </div>
+            </div>
+        </div>
+    	<div class="bottom">Copyright © 2016 Cong Yang</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="images/jquery.js"></script>
+<script type="text/javascript" src="images/index.js"></script>
+
+</body></html>
