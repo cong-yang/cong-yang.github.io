@@ -1,0 +1,11 @@
+Cong Yang received the Ph.D. degree in computer
+vision and pattern recognition from the University
+of Siegen, Germany, in 2016. He was a Postdoctoral
+Researcher at the MAGRIT Team, INRIA, France.
+He worked scientifically and led the Computer
+Vision and Machine Learning Teams at Clobotics
+and Nanjing Horizon Robotics Technology Company
+Ltd. He has been an Associate Professor with
+Soochow University, since 2022. His main research
+interests include computer vision, pattern recognition,
+and their interdisciplinary applications.
